@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --font1: 'Heebo', sans-serif;
+  --font2: 'Fira Sans Extra Condensed', sans-serif;
+  --font3: 'Roboto', sans-serif
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/*font-family: 'Noto Sans', sans-serif;*/
+}
+
+/*
+html,
+body {
+  height: 100%
+} */
+
+body {
+  font-family: var(--font3);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: grid;
+  background: rgb(255, 255, 255);
+}
+
+.navbar a{
+    font-weight: bold;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(131, 102, 24);
+}
+
+@media all and (min-width: 992px) {  /*media query?*/
+ .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{ 
+    background: #007AF3;
+    color: #fff;  }
+  .navbar .nav-item:hover .dropdown-menu{ display: block;}
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+.contact{
+  display: inline-block;
+  background: #007AF3;
+  padding: 8px 10px;
+  border-radius: 30px;
+  transition: background 0.2s;
+  margin-left: 50px;
+}
+
+.contact:hover{
+  background: #563434;
+}
+
+.nav-item:hover{
+  border-bottom: 3px solid red;
+}
+
+.navbar .navbar-nav .main{
+  color: #007AF3;
+}
+
+/* section 2 Hero section*/
+
+.Hero {
+  background-color: #efefef;
+}
+
+.Hero .hero-item{
+  font-family: Poppins;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.Hero .hero-item .active{
+  font-weight: bold;
+  color: #1f637e;
+  background-color: #efefef;
+}
+
+.Hero .hero-item .nav-link:hover{
+  background-color: #007AF3;
+  color: #efefef;
+}
+
+.Hero .hero-item a{
+  color: #563434;
+  padding-right: 40px;
+}
+
+.Hero h1{
+  color: rgb(36, 31, 33);
+  display: block;
+  font-family:Poppins;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-size-adjust: 100%;
+  margin-top: 60px;
+ 
+}
+
+.Hero ul{
+  margin: 20px 40px;
+}
+
+.Hero p{
+  box-sizing: border-box;
+  color: rgb(36, 36, 36);
+  display: block;
+  font-family: Relative, sans-serif;
+  font-size:20px;
+  font-weight: 400px;
+  line-height: 64px;
+  hyphens: manual;
+  line-height: 24px;
+  padding: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.Hero .facts{
+  margin: 100px;
+}
+
+.facts .row .col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.facts .prod-img img{
+  width:400px; 
+  height:300px; 
+  display:inline-block;
+  margin-left: 150px;
+}
+.facts .right .prod-img img{
+  width:400px; 
+  height:300px; 
+  display:inline-block;
+  margin-left: 50px;
+}
+
+.facts .left p{
+  margin-left: 150px;
+  margin-right: 0px;
+}
+
+.facts p{
+ margin-top: 80px;
+ text-align: justify;
+ font-family: Poppins;
+ font-size: large;
+}
+
+/*end of Hero*/
+
+/*Our team */
+/*
+.Our-team{
+  background-image: linear-gradient(to left, rgba(71, 71, 190, 0), rgb(98, 166, 243));
+}
+*/
+
+.Our-team .col-2{
+  flex-basis: 50%;
+}
+
+.Our-team .col-2 p{ 
+ font-size:14px; 
+line-height:22px; 
+font-weight:400;
+}
+.Our-team .col-2 img{
+display:inline-block;
+}
+
+.Our-team .col-2 figure{
+width:200px; 
+height:200px; 
+border-radius:100%; 
+display:inline-block;
+margin-top: 32px;
+margin-bottom: 24px;
+}
+.Our-team .col-2 img{ 
+width:200px; 
+height:200px; 
+border-radius:100%; 
+}
+.Our-team .col-2 h3{ 
+color:#2a2a2a; 
+font-size:20px; 
+font-weight:500; 
+padding:6px 0;
+text-transform:uppercase;
+color:#fff;
+}
+.Our-team .col-2 h3 a{
+text-decoration:none;
+color:#2a2a2a;
+}
+.Our-team .col-2 h3 a:hover{
+color:#337ab7;
+}
+.Our-team .col-2 p{ 
+color:#2a2a2a; 
+font-size:18px;  
+font-weight:400;
+margin: 24px 50px;
+line-height: 1.7;
+text-align: justify;
+padding-right: 120px;
+}
+.Our-team .col-2 .follow-us{
+margin:20px 0 0;
+}
+.Our-team .col-2 .follow-us li{ 
+ display:inline-block; 
+ width:auto; 
+ margin:0 5px;
+ margin-bottom: 32px;
+}
+.Our-team .col-2 .follow-us li .fa{ 
+font-size:24px; 
+color:#767676;
+}
+.Our-team .col-2 .follow-us li .fa:hover{ 
+color:#a7615c;
+}
+
+.Our-team .row .right h4{
+  color:rgb(138, 135, 135);
+}
+.Our-team .col-2 .h2{
+  color:rgb(58, 57, 57);
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.Our-team  span{
+  color:#054c92;
+}
+
+.Our-team .experience-bar{
+  font-size: 16px;
+  margin: 4px 50px;
+  color:#7a2b07;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.experience-bar::after{
+  content: '';
+  background: linear-gradient(to right, rgba(221, 77, 10, 0), rgb(235, 24, 9));
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  position:absolute;
+  bottom: 5;
+  left:63.6%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.Our-team .col-2 .me{
+  margin-top: 50px;
+}
+/*Our team end*/
+
+/*company structure*/
+
+.Company-structure h4{
+  text-align: left;
+  color:rgb(138, 135, 135);
+  margin-top: 12px;
+  margin-bottom: 0px;
+  margin-left: 200px;
+  line-height: 1.5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Company-structure img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  width: 70%;
+}
+/*company structure end*/
+/*company scope*/
+
+.Company-scope h4{
+  text-align: center;
+  color:rgb(138, 135, 135);
+  margin-top: 24px;
+  margin-bottom: 0px;
+  line-height: 1.5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Company-scope img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  width: 60%;
+}
+/*company scope end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer-links a{
+  color: #777171;
+}
+.footer-links a:hover{
+  color: #ffff;
+}
+/*end of footer*/

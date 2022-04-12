@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --font1: 'Heebo', sans-serif;
+  --font2: 'Fira Sans Extra Condensed', sans-serif;
+  --font3: 'Roboto', sans-serif
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/*font-family: 'Noto Sans', sans-serif;*/
+}
+
+/*
+html,
+body {
+  height: 100%
+} */
+
+body {
+  font-family: var(--font3);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: grid;
+  background: rgb(255, 255, 255);
+}
+
+.navbar a{
+    font-weight: bold;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(131, 102, 24);
+}
+
+@media all and (min-width: 992px) {  /*media query?*/
+ .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{ 
+    background: #007AF3;
+    color: #fff;  }
+  .navbar .nav-item:hover .dropdown-menu{ display: block;}
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+.contact{
+  display: inline-block;
+  background: #007AF3;
+  padding: 8px 10px;
+  border-radius: 30px;
+  transition: background 0.2s;
+  margin-left: 50px;
+}
+
+.contact:hover{
+  background: #563434;
+}
+
+.nav-item:hover{
+  border-bottom: 3px solid red;
+}
+/* section 2 Hero1 section*/
+
+
+
+.Hero1 {
+  background-color: #efefef;
+}
+
+.Hero1 li{
+  background-color: #ffff;
+}
+
+.Hero1 .hero-item{
+  font-family: Poppins;
+  font-size: 18px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.Hero1 .hero-item .active{
+  font-weight: bold;
+  color: #1f637e;
+  background-color: #efefef;
+}
+
+.Hero1 .hero-item .nav-link:hover{
+  background-color: #007AF3;
+  color: #efefef;
+}
+
+.Hero1 .hero-item a{
+  color: #563434;
+  padding-right: 40px;
+}
+
+/*Hero*/
+
+#Hero{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#Hero .figure img{
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+
+#Hero .caption{
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: #ffff;
+  top: 20%;
+  left: 0%;
+}
+
+#Hero .caption h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: var(--font1);
+  margin-bottom:0.5rem; 
+}
+
+#Hero .caption h2{
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin:0;
+  font-family: var(--font2);
+}
+
+#Hero .btn{
+ display: inline-block;
+ background: #ff523b;
+ padding: 8px 30px;
+ color:#fff;
+ margin: 30px 0;
+ border-radius: 30px;
+ transition: background 0.5s ;
+}
+
+#Hero .btn:hover{
+ background: #563434;
+}
+
+@media screen and (min-width:768px) {
+ #Hero .caption h1{
+   font-size:2.5rem;
+ }
+ #Hero .caption h2{
+   font-size:1.75rem;
+ }
+}
+
+@media screen and (min-width:992px) {
+ #Hero .caption h1{
+   font-size:3rem;
+ }
+ #Hero .caption h2{
+   font-size:2rem;
+ }
+}
+
+@media screen and (min-width:1200px) {
+ #Hero .caption h1{
+   font-size:4rem;
+ }
+ #Hero .caption h2{
+   font-size:2.5rem;
+ }
+}
+
+/*end of Hero*/
+
+.what-we-do {
+
+  color: #777171;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.what-we-do p{
+  font-size: 20px;
+  margin: 50px 70px 20px 50px;
+  text-align: center;
+}
+
+
+.what-we-do .btn{
+  display: inline-block;
+  background: #ff523b;
+  padding: 8px 30px;
+  color:#fff;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s ;
+ }
+ 
+ .what-we-do .btn:hover{
+  background: #563434;
+  text-transform: uppercase;
+ }
+
+
+/*Our solitions*/
+.Our-solutions .card-footer{
+  background-color: #b9b8b8;
+}
+
+.Our-solutions .card-footer a{
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  text-align: center;
+  font-family: Poppins;
+ 
+}
+
+.Our-solutions .card-footer:hover{
+  background-color: aliceblue;  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer-links a{
+  color: #777171;
+}
+.footer-links a:hover{
+  color: #ffff;
+}
+/*end of footer*/
